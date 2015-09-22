@@ -36,6 +36,11 @@
 			this.scrollSpeed = CONFIG.SCROLL_SPEED;
 
 			var i, o;
+			
+			  this.backgroundMusic = this.game.add.audio('music_1');
+        this.backgroundMusic.volume = 0.3;
+        this.backgroundMusic.loop = true;
+        this.backgroundMusic.play();
 
 			// Clouds
 
@@ -502,6 +507,9 @@
 			this.gameState = this.STATE.postplay;
 
 			this.guiText0.setText('Game over');
+		this.scoreboard = new Scoreboard(this.game);
+    this.game.add.existing(this.scoreboard);
+    this.scoreboard.show(this.score);
 		},
 
 		update: function () {

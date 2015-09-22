@@ -58,10 +58,12 @@
       this.load.audio('explosion_4', 'assets/audio/explosion_4.wav');
 
       this.load.audio('hurt_1', 'assets/audio/hurt_1.wav');
-      this.load.audio('collect_1', 'assets/audio/collect_1.wav');
+      this.game.load.audio('collect_1', 'assets/audio/collect_1.wav');
+
 
       // this.load.binary('music_1', 'assets/audio/mod/4-track_from_heaven.mod');
-      // this.load.audio('music_1', 'assets/audio/music_1.wav');
+      this.load.audio('music_1', 'src/assets/audio/maintrack_1.wav');
+      this.load.audio('music_1', 'dist/assets/audio/maintrack_1.wav');
 
       // Scripts
 

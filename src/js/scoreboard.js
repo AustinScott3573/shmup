@@ -1,50 +1,5 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Crixus</title>
-
-  <!-- build:css main.min.css -->
-  <link rel="stylesheet" href="css/main.css"> 
-
-  <!-- /build -->
-  <!-- build:remove -->
-  <script src="http://localhost:35729/livereload.js"></script>  
-  <!-- /build -->
-
-  <!-- build:js main.min.js -->
-  <script src="bower_components/phaser-official/build/phaser.min.js"></script>
-
-  <script src="js/boot.js"></script>
-  <script src="js/preloader.js"></script>
-  <script src="js/menu.js"></script>
-
-  <script src="js/class/spriter.js"></script>
-  <script src="js/class/actor.js"></script>
-  <script src="js/class/mob.js"></script>
-
-  <script src="js/class/shoot.js"></script>
-  <script src="js/class/enemy.js"></script>
-  <script src="js/class/flying_mobs.js"></script>
-  <script src="js/class/turret.js"></script>
-
-  <script src="js/class/player.js"></script>
-
-  <script src="js/class/bullet.js"></script>
-  <script src="js/class/collectible.js"></script>
-  <script src="js/class/cloud.js"></script>
-
-  <script src="js/game.js"></script>
-  <script src="js/main.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-  <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
-  <!-- /build -->
-
-</head>
-
-<body>
-  <div id="firsttry-game" class="game"></div>
-<section>
+(function() {
+  'use strict';
 <div class="example-base example-leaderboard l-demo-container">
   <table id="leaderboardTable">
     <tr>
@@ -130,12 +85,5 @@
       // Use setWithPriority to put the name / score in Firebase, and set the priority to be the score.
       userScoreRef.setWithPriority({ name:name, score:newScore }, newScore);
     }
+    }
   });
-</script>
-
-
-</section>
-
-</body>
-</html>
-

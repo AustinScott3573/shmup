@@ -15,7 +15,7 @@
 				, y = this.game.height / 2;
 
 
-			this.titleTxt = this.add.bitmapText(x, y, 'minecraftia', 'PHASER SHMUP' );
+			this.titleTxt = this.add.bitmapText(x, y, 'minecraftia', 'Crixus' );
 			this.titleTxt.align = 'center';
 			this.titleTxt.x = this.game.width / 2 - this.titleTxt.textWidth / 2;
 			this.titleTxt.y = this.titleTxt.y - this.titleTxt.height * 2 + 5;
